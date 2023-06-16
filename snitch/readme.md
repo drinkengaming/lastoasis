@@ -22,7 +22,7 @@ Tested on the following distributions so far:
 - syslog-ng-devel
 - syslog-ng-http
 
-### Installation
+## Installation
 
 In /etc/syslog-ng/, create a conf.d directory
 `mkdir -p /etc/syslog-ng/conf.d`
