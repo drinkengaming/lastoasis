@@ -10,17 +10,17 @@ Superuser prviledges (su/sudo)
 
 ### OS
 Tested on the following distributions so far:
-  RHEL8
-  RHEL9
-  CentOS Stream 8
-  CentOS Stream 9
-  Ubuntu 20.04 LTS
-  Ubuntu 21.04
+- RHEL8
+- RHEL9
+- CentOS Stream 8
+- CentOS Stream 9
+- Ubuntu 20.04 LTS
+- Ubuntu 21.04
 
 ### Packages
-syslog-ng-3.36  (or newer)
-syslog-ng-devel
-syslog-ng-http
+- syslog-ng-3.36  (or newer)
+- syslog-ng-devel
+- syslog-ng-http
 
 ### Installation
 
