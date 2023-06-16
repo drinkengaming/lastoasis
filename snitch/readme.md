@@ -5,8 +5,8 @@ These are various logging configurations to support sending in-game chat message
 ## Dependencies
 
 ### General
-SSH Console access
-Superuser prviledges (su/sudo)
+- SSH Console access
+- Superuser prviledges (su/sudo)
 
 ### OS
 Tested on the following distributions so far:
