@@ -21,6 +21,7 @@ Tested on the following distributions so far:
 - syslog-ng-3.36  (or newer)
 - syslog-ng-devel
 - syslog-ng-http
+(refer to your distribution documentation to install packages onto your system)
 
 ## Installation
 
