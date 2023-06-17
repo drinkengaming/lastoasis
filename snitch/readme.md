@@ -44,3 +44,17 @@ Tested on the following distributions so far:
 - Restart syslog-ng
   
   `(sudo) systemctl start syslog-ng`
+
+- Verify syslog-ng is running
+
+```
+● syslog-ng.service - System Logger Daemon
+   Loaded: loaded (/usr/lib/systemd/system/syslog-ng.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2023-06-13 15:54:55 PDT; 1h 44min ago
+     Docs: man:syslog-ng(8)
+ Main PID: 49660 (syslog-ng)
+    Tasks: 4 (limit: 203445)
+   Memory: 7.5M
+   CGroup: /system.slice/syslog-ng.service
+           └─49660 /usr/sbin/syslog-ng -F -p /var/run/syslogd.pid
+```
