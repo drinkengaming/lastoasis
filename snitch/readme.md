@@ -47,6 +47,7 @@ Tested on the following distributions so far:
 
 - Verify syslog-ng is running
 
+`systemctl status syslog-ng`
 ```
 ● syslog-ng.service - System Logger Daemon
    Loaded: loaded (/usr/lib/systemd/system/syslog-ng.service; enabled; vendor preset: enabled)
