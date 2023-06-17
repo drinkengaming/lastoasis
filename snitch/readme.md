@@ -42,4 +42,5 @@ Tested on the following distributions so far:
 - Add all three files (`filters.conf`, `parsers.conf`, `lastoasis.conf`) into `/etc/syslog/conf.d/`
 
 - Restart syslog-ng
+  
   `(sudo) systemctl start syslog-ng`
