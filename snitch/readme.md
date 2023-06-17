@@ -32,6 +32,7 @@ Tested on the following distributions so far:
 ## Installation
 
 - In /etc/syslog-ng/, create a conf.d directory
+  
 `mkdir -p /etc/syslog-ng/conf.d`
 
 - Verify or add the following line at the bottom of /etc/syslog-ng/syslog-ng.conf
