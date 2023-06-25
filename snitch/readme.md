@@ -59,3 +59,43 @@ Tested on the following distributions so far:
    CGroup: /system.slice/syslog-ng.service
            └─49660 /usr/sbin/syslog-ng -F -p /var/run/syslogd.pid
 ```
+
+## Monitoring
+
+You can use `syslog-ng-stats` to see how things are going
+
+For Discord:
+
+`/usr/sbin/syslog-ng-ctl stats | grep d_discord`
+
+```
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;batch_size_max;96
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;batch_size_avg;94
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;eps_last_1h;5
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;dropped;1
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;processed;35428
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;queued;0
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;memory_usage;0
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;written;35428
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;eps_last_24h;8
+dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/ABCDEFGHIJ-0AB-ABCD-abcdefghijklmnopqrstuvwxyz12345678901234567890;a;msg_size_max;96
+```
+
+For Slack:
+
+`/usr/sbin/syslog-ng-ctl stats | grep d_discord`
+
+```
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;eps_last_1h;5
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;eps_since_start;0
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;batch_size_max;536
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;batch_size_avg;532
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;eps_last_24h;8
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;dropped;1
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;processed;35428
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;queued;0
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;memory_usage;0
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;written;35428
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;msg_size_max;518
+dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;msg_size_avg;514
+```
