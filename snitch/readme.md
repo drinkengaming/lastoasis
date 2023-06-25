@@ -103,6 +103,9 @@ dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXX
 
 The common ones:
 
+|Metric|Description|Restrictions|
+|--|--|--|
+
 processed - The number of messages that successfully reached their destination driver.
 
 queued - 	The number of messages passed to the message queue of the destination driver, waiting to be sent to the destination.
