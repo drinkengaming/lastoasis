@@ -105,7 +105,6 @@ The common ones:
 
 |Metric|Description|Restrictions|
 |--|--|--|
-
 |processed|The number of messages that successfully reached their destination driver.||
 |queued|The number of messages passed to the message queue of the destination driver, waiting to be sent to the destination.||
 |dropped|The number of dropped messages — syslog-ng could not send the messages to the destination and the output buffer got full, so messages were dropped by the destination driver, or syslog-ng dropped the message for some other reason (for example, a parsing error).||
