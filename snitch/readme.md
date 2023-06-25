@@ -110,3 +110,16 @@ The common ones:
 |dropped|The number of dropped messages — syslog-ng could not send the messages to the destination and the output buffer got full, so messages were dropped by the destination driver, or syslog-ng dropped the message for some other reason (for example, a parsing error).||
 |written|The net number of messages successfully delivered to the destination calculated from the above counters: written = processed - queued - dropped.||
 
+The uncommon ones:
+
+|Metric|Description|Restrictions|
+|--|--|--|
+|batch_size_avg|When batching is enabled, then this shows the current average batch size of the given source or destination|only for ```http()``` destination.|
+|batch_size_max|When batching is enabled, the value of batch_size_max shows the current largest batch size of the given source or destination.|only for ```http()``` destination.|
+|discarded|The number of messages discarded by the given parser. These are messages that the parser could not parsed, and are therefore not processed|  |
+|eps_last_1h|The EPS value of the past 1 hour.|  |
+|eps_last_24h|The EPS value of the past 24 hours.|  |
+|eps_since_start|The EPS value since the current syslog-ng start.|  |
+|matched|The number of messages that are accepted by a given filter. Available for filters and similar objects (for example, a conditional rewrite rule). For example, if a filter matches a specific hostname, then the matched counter contains the number of messages that reached the filter from this hosts.|  |
+|memory_usage| The memory used by the messages in the different queue types (in bytes). This includes every queue used by the object, including memory buffers (log-fifo) and disk-based buffers (both reliable and non-reliable).|  |
+|stamp|The UNIX timestamp of the last message sent to the destination.|  |
