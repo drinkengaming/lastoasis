@@ -41,9 +41,9 @@ Tested on the following distributions so far:
 
 - Add all three files (`filters.conf`, `parsers.conf`, `lastoasis.conf`) into `/etc/syslog/conf.d/`
 - Update lastoasis.conf with the correct file and url path.
--   Change the file() and url() paths to point to the appropriate location.
--   How to Create a webhook in Discord - https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
--   How to Create a webhook in Slack - https://api.slack.com/messaging/webhooks
+  -   Change the file() and url() paths to point to the appropriate location.
+  -   How to Create a webhook in Discord - https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks
+  -   How to Create a webhook in Slack - https://api.slack.com/messaging/webhooks
 
 - Restart syslog-ng
   
