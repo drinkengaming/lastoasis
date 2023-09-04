@@ -9,4 +9,5 @@ This should apply to both current (Season 5) and "Classic" (Season 4) Servers.
 ### General
 - A purchased copy of Last Oasis from Steam
 - Administrator or root access to a Windows or Linux server.
+- A Realm account created on MyRealm or Classic MyRealm
 
