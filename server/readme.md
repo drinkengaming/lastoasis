@@ -4,4 +4,9 @@ This is intended to be a step-by-step guide for installing and running a dedicat
 
 This should apply to both current (Season 5) and "Classic" (Season 4) Servers.
 
+## Requirements
+
+### General
+- A purchased copy of Last Oasis from Steam
+- Administrator or root access to a Windows or Linux server.
 
