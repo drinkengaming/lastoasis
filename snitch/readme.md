@@ -87,7 +87,7 @@ dst.http;d_discord#0;http,https://discord.com/api/webhooks/1111111111111111111/A
 
 For Slack:
 
-`/usr/sbin/syslog-ng-ctl stats | grep d_discord`
+`/usr/sbin/syslog-ng-ctl stats | grep d_slack`
 
 ```
 dst.http;d_slack#0;http,https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX;a;eps_last_1h;5
